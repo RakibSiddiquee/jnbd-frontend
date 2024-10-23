@@ -75,6 +75,34 @@
 	.common-intro span {
 		@apply line-clamp-2
 	}
+	/* EN Font Size */
+	.en-lead-font-size {
+		@apply text-[28px] leading-[2rem] lg:text-3xl lg:leading-[2.3rem]
+	}
+	.en-cat-lead-font-size {
+		@apply text-2xl lg:text-[26px] leading-8
+	}
+	.en-medium-font-size {
+		@apply text-[1.27rem] leading-[1.7rem] lg:text-2xl lg:leading-8
+	}
+	.en-common-font-size {
+		@apply text-[1.27rem] leading-[1.7rem]
+	}
+	.en-intro-font-size {
+		@apply text-[1.125rem] leading-[1.75rem] text-intro-text-color dark:text-night-intro-text line-clamp-2
+	}
+	.en-medium-Mlead {
+		@apply text-2xl leading-8
+	}
+	.en-common-Mlead {
+		@apply text-2xl leading-8 lg:text-[1.27rem] lg:leading-[1.7rem]
+	}
+	.en-common-intro {
+		@apply text-base text-intro-text-color dark:text-night-intro-text line-clamp-2
+	}
+	.en-common-intro span {
+		@apply line-clamp-2
+	}
 
 	.text-color {
 		@apply text-text-color dark:text-night-text xl:group-hover:text-hover-text xl:dark:group-hover:text-night-hover-text
@@ -120,13 +148,19 @@
 		@apply absolute top-2 left-2
 	}
 	.video-icon-lg svg {
-		@apply size-10 fill-[#e91919] group-hover:fill-[#d00000]
+		@apply size-10 fill-[#e91919] group-hover:fill-[#d00000] bg-white rounded-full shadow-sm
+	}
+	.video-icon-lg-sm {
+		@apply absolute top-2 left-2
+	}
+	.video-icon-lg-sm svg {
+		@apply size-7 lg:size-10 fill-[#e91919] group-hover:fill-[#d00000] bg-white rounded-full shadow-sm
 	}
 	.video-icon-sm {
 		@apply absolute top-2 left-2
 	}
 	.video-icon-sm svg {
-		@apply size-7 lg:size-10 fill-[#e91919] group-hover:fill-[#d00000]
+		@apply size-7 fill-[#e91919] group-hover:fill-[#d00000] bg-white rounded-full shadow-sm
 	}
 
 	.first-box-color {
@@ -152,11 +186,29 @@
 	.col-contents {
 		@apply flex flex-col gap-2
 	}
+	.section-title-color-red {
+		@apply before:bg-[#fc0b07] dark:before:bg-[#fc0b07] after:bg-[#fc0b07] dark:after:bg-[#fc0b07]
+	}
+	.section-title-color-red a {
+		@apply bg-[#fc0b07] dark:bg-[#fc0b07]
+	}
+	.section-title-color-blue {
+		@apply before:bg-[#044394] dark:before:bg-[#044394] after:bg-[#044394] dark:after:bg-[#044394]
+	}
+	.section-title-color-blue a {
+		@apply bg-[#044394] dark:bg-[#044394]
+	}
+	.section-title-color-green {
+		@apply before:bg-[#0c682c] dark:before:bg-[#0c682c] after:bg-[#0c682c] dark:after:bg-[#0c682c]
+	}
+	.section-title-color-green a {
+		@apply bg-[#0c682c] dark:bg-[#0c682c]
+	}
 	.home-section-title {
-		@apply mb-4 flex justify-center items-center relative before:absolute before:w-full before:h-[2px] before:left-0 before:top-[17px] before:bg-[#f48c06] dark:before:bg-[#ca6702] after:absolute after:w-full after:h-[2px] after:left-0 after:top-[23px] after:bg-[#f48c06] dark:after:bg-[#ca6702]
+		@apply mb-4 flex justify-center items-center relative before:absolute before:w-full before:h-[2px] before:left-0 before:top-[17px] after:absolute after:w-full after:h-[2px] after:left-0 after:top-[23px]
 	}
 	.home-section-title a {
-		@apply flex w-fit gap-2 items-center px-4 py-1 rounded-full text-white dark:text-night-text bg-[#f48c06] dark:bg-[#ca6702] z-10
+		@apply flex w-fit gap-2 items-center px-4 py-1 rounded-full text-white dark:text-night-text z-10
 	}
 	.home-section-title a h2 {
 		@apply text-xl lg:text-2xl
@@ -190,6 +242,9 @@
 	}
 	.date-time {
 		@apply text-base text-intro-text-color dark:text-night-intro-text mt-2 block
+	}
+	.load-more-btn {
+		@apply text-text-color text-xl px-6 py-2 bg-[#adb5bd] hover:bg-[#bbc3cc] dark:bg-[#6b7387] lg:dark:hover:bg-[#7e889f] rounded-full dark:text-night-text
 	}
 
 	/* Divider */
